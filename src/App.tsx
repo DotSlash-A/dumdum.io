@@ -4,20 +4,18 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <div className="divide">
-        <div style={{ flex: '1', backgroundColor: '#e0e0e0', height: '50vh' }}>
-          <h1 style={{ fontSize: '300px', textAlign: 'center', fontFamily: 'monospace' }}>Ananya</h1>
-        </div>
-        <div style={{ flex: '1', backgroundColor: '#f0f0f0', height: '50vh' }}>
-          <div style={{ fontSize: '20px', textAlign: 'center', fontFamily: 'monospace' }}>
-            <h2>this id the bottom half</h2>
-            <h2>i dont know what to write</h2>
-            <h2>i lost the dribble</h2>
-          </div>
-        </div>
-      </div >
-    </>
+    <div id='subroot' className='flex flex-col justify-between'>
+      <div>
+        <h1 className='font-serif text-9xl text-center my-32'>Ananya</h1>
+      </div>
+      <div className='self-center my-16 font-serif text-center'>
+        <h2>I am a student at IIT Madras pursuing Data Science</h2>
+        <h2>I am interested in deep learning and NLP</h2>
+        <h2> <a className='no-underline hover:underline text-sky-600 mx-1' href="https://www.linkedin.com/in/dotslashananya/" target='_blank'>Linkedin</a>
+         •<a className='no-underline hover:underline text-sky-600 mx-1' href="https://github.com/DotSlash-A" target='_blank'>Github</a>
+         •<a className='no-underline hover:underline text-sky-600 mx-1' href="mailto:dotslashananya@gmail.com" target='_blank'>email</a></h2>
+      </div>
+    </div >
   )
 }
 
